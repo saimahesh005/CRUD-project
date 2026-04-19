@@ -35,14 +35,6 @@ def addrecords(request):
         employee1.save()
         return redirect('members')
 
-    # template = loader.get_template('myfirsthtml.html')
-    # myemployees1 = Employee.objects.all().values()
-    # context = {'myemployees': myemployees1}
-    # return HttpResponse(template.render(context, request)) 
-    #  url same and refresh the page same data will be added again and again. 
-    #  To avoid this we can use redirect function to redirect to the members view after adding a record.
-    #  return redirect('members')  url change to members and refresh the page same data will not be added again and again.
-
 # using render function instead of loader and HttpResponse.
 def updaterecords(request):
     id = request.GET.get('id')
