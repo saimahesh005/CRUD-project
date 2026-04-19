@@ -3,35 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Employee Form</title>
 </head>
 <body>
 
-    <a href="members"> show records </a>
+<a href="members">Show Employee Records</a>
 
-
-    <h2>Add Member</h2>
+<h2>Add Employee</h2>
 <form action="addrecords">
+    First Name: <input type="text" name="text1">
+    Last Name: <input type="text" name="text2"><br><br>
 
-  First name: <input type="text" name="text1">
+    Email: <input type="email" name="text3">
+    Phone Number: <input type="text" name="text4"><br><br>
 
-  Last name: <input type="text" name="text2">
-  <input type="submit" value="Add">
+    Job Role: <input type="text" name="text5">
+    Salary: <input type="text" name="text6"><br><br>
+
+    <input type="submit" value="Add">
 </form>
 
-<h2>Update Member</h2>
+<h2>Update Employee</h2>
 <form action="update">
-  ID: <input type="text" name="id">
-  New First name: <input type="text" name="text1">
-  New Last name: <input type="text" name="text2">
-  <input type="submit" value="Update">
+    ID: <input type="text" name="id"><br><br>
+
+    First Name: <input type="text" name="text1">
+    Last Name: <input type="text" name="text2"><br><br>
+
+    Email: <input type="email" name="text3">
+    Phone Number: <input type="text" name="text4"><br><br>
+
+    Job Role: <input type="text" name="text5">
+    Salary: <input type="text" name="text6"><br><br>
+
+    <input type="submit" value="Update">
 </form>
 
-
-<h2>Delete Member</h2>
+<h2>Delete Employee</h2>
 <form action="delete">
-  ID: <input type="text" name="id">
-  <input type="submit" value="Delete">
+    ID: <input type="text" name="id">
+    <input type="submit" value="Delete">
 </form>
 
 </body>
