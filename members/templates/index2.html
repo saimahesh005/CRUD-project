@@ -6,40 +6,43 @@
 <title>Employee Form</title>
 </head>
 
-<body style="font-family:Arial, sans-serif; background:#f5f5f5; padding:30px;">
+<body style="font-family:Arial; background: blue; padding:30px;">
 
-<div style="max-width:600px; margin:auto; background:white; padding:20px; border:1px solid #ddd; border-radius:8px;">
-
-    <!-- Link -->
+<div style="max-width:100%; margin:auto; background:yellow; padding:20px; border:1px solid red; border-radius:10px;">
+ 
+    <!-- Link to Employee Records -->
     <a href="members"
-       style="text-decoration:none; border:1px solid black; padding:6px 12px; color:black; display:inline-block; margin-bottom:20px;"
+       style="text-decoration:none; border:1px solid black; padding:6px 12px; color:black;background:white; display:inline-block; margin-top:10px;"
        onmouseover="this.style.background='black';this.style.color='white';"
        onmouseout="this.style.background='white';this.style.color='black';">
        Show Employee Records
     </a>
-
+    <h1 style= "margin:10px; padding:5px; text-align:center;">
+        Employee Management
+    </h1>
+    
     <!-- Add Employee -->
     <h2 style="border-bottom:2px solid black; padding-bottom:6px;">Add Employee</h2>
 
-    <form action="addrecords" style="margin-bottom:25px;">
+    <form action="addrecords" >
 
         <input type="text" name="text1" placeholder="First Name"
-        style="width:48%; padding:8px; margin:5px 1%; border:1px solid #ccc;">
+        style="width:38%; padding:8px; margin:5px 1%; border:1px solid red;">
 
         <input type="text" name="text2" placeholder="Last Name"
-        style="width:48%; padding:8px; margin:5px 1%; border:1px solid #ccc;"><br>
+        style="width:38%; padding:8px; margin:5px 1%; border:1px solid red;">
 
         <input type="email" name="text3" placeholder="Email"
-        style="width:48%; padding:8px; margin:5px 1%; border:1px solid #ccc;">
+        style="width:38%; padding:8px; margin:5px 1%; border:1px solid red;">
 
         <input type="text" name="text4" placeholder="Phone Number"
-        style="width:48%; padding:8px; margin:5px 1%; border:1px solid #ccc;"><br>
+        style="width:38%; padding:8px; margin:5px 1%; border:1px solid red;">
 
         <input type="text" name="text5" placeholder="Job Role"
-        style="width:48%; padding:8px; margin:5px 1%; border:1px solid #ccc;">
+        style="width:38%; padding:8px; margin:5px 1%; border:1px solid red;">
 
         <input type="text" name="text6" placeholder="Salary"
-        style="width:48%; padding:8px; margin:5px 1%; border:1px solid #ccc;"><br><br>
+        style="width:38%; padding:8px; margin:5px 1%; border:1px solid red;">
 
         <input type="submit" value="Add"
         style="border:1px solid black; background:white; padding:8px 15px; cursor:pointer;"
@@ -50,28 +53,28 @@
     <!-- Update Employee -->
     <h2 style="border-bottom:2px solid black; padding-bottom:6px;">Update Employee</h2>
 
-    <form action="update" style="margin-bottom:25px;">
+    <form action="update">
 
         <input type="text" name="id" placeholder="Employee ID"
-        style="width:98%; padding:8px; margin:5px 1%; border:1px solid #ccc;"><br>
+        style="width:38%; padding:8px; margin:5px 1%; border:1px solid red;"><br>
 
         <input type="text" name="text1" placeholder="First Name"
-        style="width:48%; padding:8px; margin:5px 1%; border:1px solid #ccc;">
+        style="width:38%; padding:8px; margin:5px 1%; border:1px solid red;">
 
         <input type="text" name="text2" placeholder="Last Name"
-        style="width:48%; padding:8px; margin:5px 1%; border:1px solid #ccc;"><br>
+        style="width:38%; padding:8px; margin:5px 1%; border:1px solid red;">
 
         <input type="email" name="text3" placeholder="Email"
-        style="width:48%; padding:8px; margin:5px 1%; border:1px solid #ccc;">
+        style="width:38%; padding:8px; margin:5px 1%; border:1px solid red;">
 
         <input type="text" name="text4" placeholder="Phone Number"
-        style="width:48%; padding:8px; margin:5px 1%; border:1px solid #ccc;"><br>
+        style="width:38%; padding:8px; margin:5px 1%; border:1px solid red;">
 
         <input type="text" name="text5" placeholder="Job Role"
-        style="width:48%; padding:8px; margin:5px 1%; border:1px solid #ccc;">
+        style="width:38%; padding:8px; margin:5px 1%; border:1px solid red;">
 
         <input type="text" name="text6" placeholder="Salary"
-        style="width:48%; padding:8px; margin:5px 1%; border:1px solid #ccc;"><br><br>
+        style="width:38%; padding:8px; margin:5px 1%; border:1px solid red;">
 
         <input type="submit" value="Update"
         style="border:1px solid black; background:white; padding:8px 15px; cursor:pointer;"
@@ -85,7 +88,7 @@
     <form action="delete">
 
         <input type="text" name="id" placeholder="Employee ID"
-        style="width:98%; padding:8px; margin:5px 1%; border:1px solid #ccc;"><br><br>
+        style="width:38%; padding:8px; margin:5px 1%; border:1px solid red;">
 
         <input type="submit" value="Delete"
         style="border:1px solid black; background:white; padding:8px 15px; cursor:pointer;"
