@@ -1,49 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Form</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Form</title>
 </head>
-<body>
 
-<a href="members">Show Employee Records</a>
+<body style="font-family:Arial, sans-serif; background:#f5f5f5; padding:30px;">
 
-<h2>Add Employee</h2>
-<form action="addrecords">
-    First Name: <input type="text" name="text1">
-    Last Name: <input type="text" name="text2"><br><br>
+<div style="max-width:600px; margin:auto; background:white; padding:20px; border:1px solid #ddd; border-radius:8px;">
 
-    Email: <input type="email" name="text3">
-    Phone Number: <input type="text" name="text4"><br><br>
+    <!-- Link -->
+    <a href="members"
+       style="text-decoration:none; border:1px solid black; padding:6px 12px; color:black; display:inline-block; margin-bottom:20px;"
+       onmouseover="this.style.background='black';this.style.color='white';"
+       onmouseout="this.style.background='white';this.style.color='black';">
+       Show Employee Records
+    </a>
 
-    Job Role: <input type="text" name="text5">
-    Salary: <input type="text" name="text6"><br><br>
+    <!-- Add Employee -->
+    <h2 style="border-bottom:2px solid black; padding-bottom:6px;">Add Employee</h2>
 
-    <input type="submit" value="Add">
-</form>
+    <form action="addrecords" style="margin-bottom:25px;">
 
-<h2>Update Employee</h2>
-<form action="update">
-    ID: <input type="text" name="id"><br><br>
+        <input type="text" name="text1" placeholder="First Name"
+        style="width:48%; padding:8px; margin:5px 1%; border:1px solid #ccc;">
 
-    First Name: <input type="text" name="text1">
-    Last Name: <input type="text" name="text2"><br><br>
+        <input type="text" name="text2" placeholder="Last Name"
+        style="width:48%; padding:8px; margin:5px 1%; border:1px solid #ccc;"><br>
 
-    Email: <input type="email" name="text3">
-    Phone Number: <input type="text" name="text4"><br><br>
+        <input type="email" name="text3" placeholder="Email"
+        style="width:48%; padding:8px; margin:5px 1%; border:1px solid #ccc;">
 
-    Job Role: <input type="text" name="text5">
-    Salary: <input type="text" name="text6"><br><br>
+        <input type="text" name="text4" placeholder="Phone Number"
+        style="width:48%; padding:8px; margin:5px 1%; border:1px solid #ccc;"><br>
 
-    <input type="submit" value="Update">
-</form>
+        <input type="text" name="text5" placeholder="Job Role"
+        style="width:48%; padding:8px; margin:5px 1%; border:1px solid #ccc;">
 
-<h2>Delete Employee</h2>
-<form action="delete">
-    ID: <input type="text" name="id">
-    <input type="submit" value="Delete">
-</form>
+        <input type="text" name="text6" placeholder="Salary"
+        style="width:48%; padding:8px; margin:5px 1%; border:1px solid #ccc;"><br><br>
+
+        <input type="submit" value="Add"
+        style="border:1px solid black; background:white; padding:8px 15px; cursor:pointer;"
+        onmouseover="this.style.background='black';this.style.color='white';"
+        onmouseout="this.style.background='white';this.style.color='black';">
+    </form>
+
+    <!-- Update Employee -->
+    <h2 style="border-bottom:2px solid black; padding-bottom:6px;">Update Employee</h2>
+
+    <form action="update" style="margin-bottom:25px;">
+
+        <input type="text" name="id" placeholder="Employee ID"
+        style="width:98%; padding:8px; margin:5px 1%; border:1px solid #ccc;"><br>
+
+        <input type="text" name="text1" placeholder="First Name"
+        style="width:48%; padding:8px; margin:5px 1%; border:1px solid #ccc;">
+
+        <input type="text" name="text2" placeholder="Last Name"
+        style="width:48%; padding:8px; margin:5px 1%; border:1px solid #ccc;"><br>
+
+        <input type="email" name="text3" placeholder="Email"
+        style="width:48%; padding:8px; margin:5px 1%; border:1px solid #ccc;">
+
+        <input type="text" name="text4" placeholder="Phone Number"
+        style="width:48%; padding:8px; margin:5px 1%; border:1px solid #ccc;"><br>
+
+        <input type="text" name="text5" placeholder="Job Role"
+        style="width:48%; padding:8px; margin:5px 1%; border:1px solid #ccc;">
+
+        <input type="text" name="text6" placeholder="Salary"
+        style="width:48%; padding:8px; margin:5px 1%; border:1px solid #ccc;"><br><br>
+
+        <input type="submit" value="Update"
+        style="border:1px solid black; background:white; padding:8px 15px; cursor:pointer;"
+        onmouseover="this.style.background='black';this.style.color='white';"
+        onmouseout="this.style.background='white';this.style.color='black';">
+    </form>
+
+    <!-- Delete Employee -->
+    <h2 style="border-bottom:2px solid black; padding-bottom:6px;">Delete Employee</h2>
+
+    <form action="delete">
+
+        <input type="text" name="id" placeholder="Employee ID"
+        style="width:98%; padding:8px; margin:5px 1%; border:1px solid #ccc;"><br><br>
+
+        <input type="submit" value="Delete"
+        style="border:1px solid black; background:white; padding:8px 15px; cursor:pointer;"
+        onmouseover="this.style.background='black';this.style.color='white';"
+        onmouseout="this.style.background='white';this.style.color='black';">
+    </form>
+
+</div>
 
 </body>
 </html>
