@@ -24,7 +24,8 @@
     <!-- Add Employee -->
     <h2 style="border-bottom:2px solid black; padding-bottom:6px;">Add Employee</h2>
 
-    <form action="addrecords" >
+    <form action="addrecords" method="post">
+        {% csrf_token %}    
 
         <input type="text" name="text1" placeholder="First Name"
         style="width:38%; padding:8px; margin:5px 1%; border:1px solid red;">
@@ -53,7 +54,8 @@
     <!-- Update Employee -->
     <h2 style="border-bottom:2px solid black; padding-bottom:6px;">Update Employee</h2>
 
-    <form action="update">
+    <form action="update" method="post">
+        {% csrf_token %}
 
         <input type="text" name="id" placeholder="Employee ID"
         style="width:38%; padding:8px; margin:5px 1%; border:1px solid red;"><br>
@@ -85,7 +87,8 @@
     <!-- Delete Employee -->
     <h2 style="border-bottom:2px solid black; padding-bottom:6px;">Delete Employee</h2>
 
-    <form action="delete">
+    <form action="delete" method="post">
+        {% csrf_token %}
 
         <input type="text" name="id" placeholder="Employee ID"
         style="width:38%; padding:8px; margin:5px 1%; border:1px solid red;">
