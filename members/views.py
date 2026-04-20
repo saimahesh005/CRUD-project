@@ -11,8 +11,8 @@ def members(request):
 
 
 
-def index2(request):
-	template=loader.get_template('index2.html')
+def home(request):
+	template=loader.get_template('index.html')
 	return HttpResponse( template.render() )
 
 # using loader and HttpResponse functions.
@@ -68,9 +68,4 @@ def deleterecords(request):
          return HttpResponse("Employee not found")
     myemployees1=Employee.objects.all().values()
     context={'myemployees':myemployees1 }
-    return render(request, 'myfirsthtml.html', context)
-      
-
-
-
-
+    return render(request, 'myfirsthtml.html', context)   
