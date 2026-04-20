@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.template import loader
 from .models import Employee
 
+# using loader and HttpResponse functions.
 def members(request):
     template = loader.get_template('myfirsthtml.html')
     myemployees = Employee.objects.all().values()
@@ -15,7 +16,6 @@ def home(request):
 	template=loader.get_template('index.html')
 	return HttpResponse( template.render() )
 
-# using loader and HttpResponse functions.
 def addrecords(request):
     fn=request.GET.get('text1')
     ln=request.GET.get('text2')
